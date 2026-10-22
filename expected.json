@@ -1,0 +1,866 @@
+{
+ "cases": [
+  {
+   "fn": "boardfeet",
+   "args": [
+    "1000",
+    "2"
+   ],
+   "expect": "The area of 1000 sq ft at 2 inches thick takes 2000 board feet of foam."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "2000",
+    "600"
+   ],
+   "expect": "The job of 2000 board feet with kits of 600 board feet takes 4 kits, leaving 400 board feet in the last one."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "600",
+    "2"
+   ],
+   "expect": "The kit of 600 board feet at 2 inches thick covers 300 sq ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4",
+    "650",
+    "2000"
+   ],
+   "expect": "The 4 kits at $650 each cost $2600.00, or $1.30 a board foot over the 2000."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "74959",
+    "3.7"
+   ],
+   "expect": "The area of 74959 sq ft at 3.7 inches thick takes 277348.3 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "995784",
+    "6.63"
+   ],
+   "expect": "The area of 995784 sq ft at 6.63 inches thick takes 6602047.92 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "319519",
+    "7.89"
+   ],
+   "expect": "The area of 319519 sq ft at 7.89 inches thick takes 2521004.91 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "47560",
+    "6.79"
+   ],
+   "expect": "The area of 47560 sq ft at 6.79 inches thick takes 322932.4 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "463508",
+    "6.85"
+   ],
+   "expect": "The area of 463508 sq ft at 6.85 inches thick takes 3175029.8 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "711952",
+    "8.44"
+   ],
+   "expect": "The area of 711952 sq ft at 8.44 inches thick takes 6008874.88 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "826905",
+    "11.48"
+   ],
+   "expect": "The area of 826905 sq ft at 11.48 inches thick takes 9492869.4 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "611383",
+    "0.19"
+   ],
+   "expect": "The area of 611383 sq ft at 0.19 inches thick takes 116162.77 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "699147",
+    "9.75"
+   ],
+   "expect": "The area of 699147 sq ft at 9.75 inches thick takes 6816683.25 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "716466",
+    "2.44"
+   ],
+   "expect": "The area of 716466 sq ft at 2.44 inches thick takes 1748177.04 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "55275",
+    "0.63"
+   ],
+   "expect": "The area of 55275 sq ft at 0.63 inches thick takes 34823.25 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "616650",
+    "0.93"
+   ],
+   "expect": "The area of 616650 sq ft at 0.93 inches thick takes 573484.5 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "214269",
+    "6.72"
+   ],
+   "expect": "The area of 214269 sq ft at 6.72 inches thick takes 1439887.68 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "526248",
+    "7.24"
+   ],
+   "expect": "The area of 526248 sq ft at 7.24 inches thick takes 3810035.52 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "82979",
+    "8.12"
+   ],
+   "expect": "The area of 82979 sq ft at 8.12 inches thick takes 673789.48 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "417295",
+    "7.05"
+   ],
+   "expect": "The area of 417295 sq ft at 7.05 inches thick takes 2941929.75 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "745632",
+    "4.1"
+   ],
+   "expect": "The area of 745632 sq ft at 4.1 inches thick takes 3057091.2 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "430723",
+    "1.51"
+   ],
+   "expect": "The area of 430723 sq ft at 1.51 inches thick takes 650391.73 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "320107",
+    "6.95"
+   ],
+   "expect": "The area of 320107 sq ft at 6.95 inches thick takes 2224743.65 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "967243",
+    "9.64"
+   ],
+   "expect": "The area of 967243 sq ft at 9.64 inches thick takes 9324222.52 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "455064",
+    "0.23"
+   ],
+   "expect": "The area of 455064 sq ft at 0.23 inches thick takes 104664.72 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "368136",
+    "1.31"
+   ],
+   "expect": "The area of 368136 sq ft at 1.31 inches thick takes 482258.16 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "787166",
+    "2.07"
+   ],
+   "expect": "The area of 787166 sq ft at 2.07 inches thick takes 1629433.62 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "493459",
+    "5.64"
+   ],
+   "expect": "The area of 493459 sq ft at 5.64 inches thick takes 2783108.76 board feet of foam."
+  },
+  {
+   "fn": "boardfeet",
+   "args": [
+    "554446",
+    "7.44"
+   ],
+   "expect": "The area of 554446 sq ft at 7.44 inches thick takes 4125078.24 board feet of foam."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "22473011",
+    "96284"
+   ],
+   "expect": "The job of 22473011 board feet with kits of 96284 board feet takes 234 kits, leaving 57445 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "42368009",
+    "11558"
+   ],
+   "expect": "The job of 42368009 board feet with kits of 11558 board feet takes 3666 kits, leaving 3619 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "43155299",
+    "50271"
+   ],
+   "expect": "The job of 43155299 board feet with kits of 50271 board feet takes 859 kits, leaving 27490 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "92877425",
+    "36492"
+   ],
+   "expect": "The job of 92877425 board feet with kits of 36492 board feet takes 2546 kits, leaving 31207 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "50861579",
+    "62672"
+   ],
+   "expect": "The job of 50861579 board feet with kits of 62672 board feet takes 812 kits, leaving 28085 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "97391007",
+    "73840"
+   ],
+   "expect": "The job of 97391007 board feet with kits of 73840 board feet takes 1319 kits, leaving 3953 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "13457065",
+    "10849"
+   ],
+   "expect": "The job of 13457065 board feet with kits of 10849 board feet takes 1241 kits, leaving 6544 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "56405562",
+    "48854"
+   ],
+   "expect": "The job of 56405562 board feet with kits of 48854 board feet takes 1155 kits, leaving 20808 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "13299784",
+    "44338"
+   ],
+   "expect": "The job of 13299784 board feet with kits of 44338 board feet takes 300 kits, leaving 1616 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "77686511",
+    "62359"
+   ],
+   "expect": "The job of 77686511 board feet with kits of 62359 board feet takes 1246 kits, leaving 12803 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "66475215",
+    "3214"
+   ],
+   "expect": "The job of 66475215 board feet with kits of 3214 board feet takes 20684 kits, leaving 3161 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "86682153",
+    "92585"
+   ],
+   "expect": "The job of 86682153 board feet with kits of 92585 board feet takes 937 kits, leaving 69992 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "18584439",
+    "990"
+   ],
+   "expect": "The job of 18584439 board feet with kits of 990 board feet takes 18773 kits, leaving 831 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "25339454",
+    "11441"
+   ],
+   "expect": "The job of 25339454 board feet with kits of 11441 board feet takes 2215 kits, leaving 2361 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "96814824",
+    "21761"
+   ],
+   "expect": "The job of 96814824 board feet with kits of 21761 board feet takes 4450 kits, leaving 21626 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "67054981",
+    "65727"
+   ],
+   "expect": "The job of 67054981 board feet with kits of 65727 board feet takes 1021 kits, leaving 52286 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "67574220",
+    "70559"
+   ],
+   "expect": "The job of 67574220 board feet with kits of 70559 board feet takes 958 kits, leaving 21302 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "18313305",
+    "98232"
+   ],
+   "expect": "The job of 18313305 board feet with kits of 98232 board feet takes 187 kits, leaving 56079 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "45982265",
+    "48514"
+   ],
+   "expect": "The job of 45982265 board feet with kits of 48514 board feet takes 948 kits, leaving 9007 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "22753437",
+    "30537"
+   ],
+   "expect": "The job of 22753437 board feet with kits of 30537 board feet takes 746 kits, leaving 27165 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "63226342",
+    "36834"
+   ],
+   "expect": "The job of 63226342 board feet with kits of 36834 board feet takes 1717 kits, leaving 17636 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "10521360",
+    "77721"
+   ],
+   "expect": "The job of 10521360 board feet with kits of 77721 board feet takes 136 kits, leaving 48696 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "19412310",
+    "53539"
+   ],
+   "expect": "The job of 19412310 board feet with kits of 53539 board feet takes 363 kits, leaving 22347 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "72035891",
+    "42503"
+   ],
+   "expect": "The job of 72035891 board feet with kits of 42503 board feet takes 1695 kits, leaving 6694 board feet in the last one."
+  },
+  {
+   "fn": "kits",
+   "args": [
+    "71038584",
+    "8519"
+   ],
+   "expect": "The job of 71038584 board feet with kits of 8519 board feet takes 8339 kits, leaving 1357 board feet in the last one."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "67441",
+    "2.96"
+   ],
+   "expect": "The kit of 67441 board feet at 2.96 inches thick covers 22784.12 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "32180",
+    "5.51"
+   ],
+   "expect": "The kit of 32180 board feet at 5.51 inches thick covers 5840.29 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "28654",
+    "4.44"
+   ],
+   "expect": "The kit of 28654 board feet at 4.44 inches thick covers 6453.6 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "56778",
+    "0.83"
+   ],
+   "expect": "The kit of 56778 board feet at 0.83 inches thick covers 68407.23 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "3173",
+    "9.7"
+   ],
+   "expect": "The kit of 3173 board feet at 9.7 inches thick covers 327.11 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "76786",
+    "6.03"
+   ],
+   "expect": "The kit of 76786 board feet at 6.03 inches thick covers 12734 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "98291",
+    "2.13"
+   ],
+   "expect": "The kit of 98291 board feet at 2.13 inches thick covers 46146.01 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "77976",
+    "11.14"
+   ],
+   "expect": "The kit of 77976 board feet at 11.14 inches thick covers 6999.64 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "39434",
+    "0.32"
+   ],
+   "expect": "The kit of 39434 board feet at 0.32 inches thick covers 123231.25 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "59989",
+    "9.47"
+   ],
+   "expect": "The kit of 59989 board feet at 9.47 inches thick covers 6334.64 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "85321",
+    "11.81"
+   ],
+   "expect": "The kit of 85321 board feet at 11.81 inches thick covers 7224.47 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "15981",
+    "2.75"
+   ],
+   "expect": "The kit of 15981 board feet at 2.75 inches thick covers 5811.27 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "57624",
+    "6.99"
+   ],
+   "expect": "The kit of 57624 board feet at 6.99 inches thick covers 8243.78 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "82591",
+    "8.88"
+   ],
+   "expect": "The kit of 82591 board feet at 8.88 inches thick covers 9300.79 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "60618",
+    "11.67"
+   ],
+   "expect": "The kit of 60618 board feet at 11.67 inches thick covers 5194.34 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "62316",
+    "1"
+   ],
+   "expect": "The kit of 62316 board feet at 1 inches thick covers 62316 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "96762",
+    "10.1"
+   ],
+   "expect": "The kit of 96762 board feet at 10.1 inches thick covers 9580.4 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "6172",
+    "8.85"
+   ],
+   "expect": "The kit of 6172 board feet at 8.85 inches thick covers 697.4 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "85820",
+    "11.39"
+   ],
+   "expect": "The kit of 85820 board feet at 11.39 inches thick covers 7534.68 sq ft."
+  },
+  {
+   "fn": "coverage",
+   "args": [
+    "83473",
+    "11.86"
+   ],
+   "expect": "The kit of 83473 board feet at 11.86 inches thick covers 7038.2 sq ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "579",
+    "9538.43",
+    "60208399"
+   ],
+   "expect": "The 579 kits at $9538.43 each cost $5522750.97, or $0.09 a board foot over the 60208399."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2740",
+    "3433.9",
+    "65895560"
+   ],
+   "expect": "The 2740 kits at $3433.9 each cost $9408886.00, or $0.14 a board foot over the 65895560."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4882",
+    "2492.32",
+    "42807643"
+   ],
+   "expect": "The 4882 kits at $2492.32 each cost $12167506.24, or $0.28 a board foot over the 42807643."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "682",
+    "2787.66",
+    "33192301"
+   ],
+   "expect": "The 682 kits at $2787.66 each cost $1901184.12, or $0.06 a board foot over the 33192301."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "9246",
+    "5004.96",
+    "18881769"
+   ],
+   "expect": "The 9246 kits at $5004.96 each cost $46275860.16, or $2.45 a board foot over the 18881769."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4734",
+    "4276.75",
+    "84620539"
+   ],
+   "expect": "The 4734 kits at $4276.75 each cost $20246134.50, or $0.24 a board foot over the 84620539."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4302",
+    "2418.88",
+    "53307669"
+   ],
+   "expect": "The 4302 kits at $2418.88 each cost $10406021.76, or $0.20 a board foot over the 53307669."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8175",
+    "604.98",
+    "25682875"
+   ],
+   "expect": "The 8175 kits at $604.98 each cost $4945711.50, or $0.19 a board foot over the 25682875."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "5071",
+    "9486.23",
+    "68947299"
+   ],
+   "expect": "The 5071 kits at $9486.23 each cost $48104672.33, or $0.70 a board foot over the 68947299."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "9294",
+    "4708.43",
+    "38435823"
+   ],
+   "expect": "The 9294 kits at $4708.43 each cost $43760148.42, or $1.14 a board foot over the 38435823."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2333",
+    "9286.69",
+    "11876819"
+   ],
+   "expect": "The 2333 kits at $9286.69 each cost $21665847.77, or $1.82 a board foot over the 11876819."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "585",
+    "3546.62",
+    "34600145"
+   ],
+   "expect": "The 585 kits at $3546.62 each cost $2074772.70, or $0.06 a board foot over the 34600145."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2681",
+    "5061.14",
+    "22188188"
+   ],
+   "expect": "The 2681 kits at $5061.14 each cost $13568916.34, or $0.61 a board foot over the 22188188."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2908",
+    "6129.85",
+    "9076617"
+   ],
+   "expect": "The 2908 kits at $6129.85 each cost $17825603.80, or $1.96 a board foot over the 9076617."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1818",
+    "7052.76",
+    "60491350"
+   ],
+   "expect": "The 1818 kits at $7052.76 each cost $12821917.68, or $0.21 a board foot over the 60491350."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "3315",
+    "5248.24",
+    "8553963"
+   ],
+   "expect": "The 3315 kits at $5248.24 each cost $17397915.60, or $2.03 a board foot over the 8553963."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "3172",
+    "6094.75",
+    "52848955"
+   ],
+   "expect": "The 3172 kits at $6094.75 each cost $19332547.00, or $0.37 a board foot over the 52848955."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "5781",
+    "9083.51",
+    "39819125"
+   ],
+   "expect": "The 5781 kits at $9083.51 each cost $52511771.31, or $1.32 a board foot over the 39819125."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "9644",
+    "9325.45",
+    "53811797"
+   ],
+   "expect": "The 9644 kits at $9325.45 each cost $89934639.80, or $1.67 a board foot over the 53811797."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "6176",
+    "7401.34",
+    "83392492"
+   ],
+   "expect": "The 6176 kits at $7401.34 each cost $45710675.84, or $0.55 a board foot over the 83392492."
+  }
+ ],
+ "errors": [
+  [
+   "boardfeet",
+   [
+    "0",
+    "2"
+   ]
+  ],
+  [
+   "boardfeet",
+   [
+    "1000",
+    "0"
+   ]
+  ],
+  [
+   "boardfeet",
+   [
+    "1000",
+    "12.01"
+   ]
+  ],
+  [
+   "kits",
+   [
+    "0",
+    "600"
+   ]
+  ],
+  [
+   "kits",
+   [
+    "2000",
+    "0"
+   ]
+  ],
+  [
+   "coverage",
+   [
+    "0",
+    "2"
+   ]
+  ],
+  [
+   "coverage",
+   [
+    "600",
+    "0"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "650",
+    "2000"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "0",
+    "2000"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "650",
+    "0"
+   ]
+  ],
+  [
+   "boardfeet",
+   [
+    "1000",
+    "2.001"
+   ]
+  ],
+  [
+   "kits",
+   [
+    "2000.5",
+    "600"
+   ]
+  ]
+ ]
+}
