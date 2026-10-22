@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foam Math - app</title>
+<style>
+  :root { --accent:#3d2e5d; --ink:#1c1826; --paper:#f5f4f7; --soft:#e5e2ec; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #a89fc2; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #a89fc2; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#6e6880; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Foam Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts board feet with multiplication and division: the board feet a job takes at a thickness, the whole kits and what is left in the last one, the area one kit covers at a thickness, and the cost per board foot. The area, the thickness, the kit yield and the prices are yours to measure or read off your own kit box. It applies the counting as written, so it has not seen your cavities and does not know your overspray, your pass thickness limits, your temperature window or your local foam rules, and it gives no verdict that a thickness performs. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The board-feet truth</h2>
+    <p class="note">Board feet: the area times the inches of thickness.</p>
+    <div class="row2">
+      <div><label for="b-a">Area (sq ft)</label><input id="b-a" type="text" value="1000"></div>
+      <div><label for="b-t">Thickness (inches)</label><input id="b-t" type="text" value="2"></div>
+    </div>
+    <div class="out" id="b-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The kits truth</h2>
+    <p class="note">Whole kits: rounded up, and the board feet left in the last one.</p>
+    <div class="row2">
+      <div><label for="k-b">Board feet needed</label><input id="k-b" type="text" value="2000"></div>
+      <div><label for="k-y">Kit yield (board feet)</label><input id="k-y" type="text" value="600"></div>
+    </div>
+    <div class="out" id="k-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The coverage truth</h2>
+    <p class="note">Coverage: one kit's board feet spread at your thickness.</p>
+    <div class="row2">
+      <div><label for="v-y">Kit yield (board feet)</label><input id="v-y" type="text" value="600"></div>
+      <div><label for="v-t">Thickness (inches)</label><input id="v-t" type="text" value="2"></div>
+    </div>
+    <div class="out" id="v-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the kits at their price, and what that is per board foot.</p>
+    <div class="row2">
+      <div><label for="c-n">Kits</label><input id="c-n" type="text" value="4"></div>
+      <div><label for="c-p">Kit price (dollars)</label><input id="c-p" type="text" value="650"></div>
+    </div>
+    <div class="row2">
+      <div><label for="c-b">Board feet covered</label><input id="c-b" type="text" value="2000"></div>
+    </div>
+    <div class="out" id="c-out"></div>
+  </div>
+
+  <footer>Foam Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("b-out", () => boardfeetTruth(v("b-a"), v("b-t")));
+    show("k-out", () => kitsTruth(v("k-b"), v("k-y")));
+    show("v-out", () => coverageTruth(v("v-y"), v("v-t")));
+    show("c-out", () => costTruth(v("c-n"), v("c-p"), v("c-b")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
