@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foam Math - spray foam board-feet arithmetic</title>
+<style>
+  :root { --accent:#3d2e5d; --ink:#1c1826; --paper:#f5f4f7; --soft:#e5e2ec; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#6e6880; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Foam Math</h1>
+  <p class="lede">The area of 1000 sq ft at 2 inches thick takes 2000 board feet of foam.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Foam Math counts board feet with multiplication and division: the board feet a job takes at a thickness, the whole kits and what is left in the last one, the area one kit covers at a thickness, and the cost per board foot. It applies the counting as written, so it has not seen your cavities and does not know your overspray, your pass thickness limits, your temperature window or your local foam rules, and it gives no verdict that a thickness performs. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: 1000 sq ft at 2 inches, kits of 600 board feet at $650 each.</p>
+  <section>
+    <h2>The board-feet truth</h2>
+    <p>The area of 1000 sq ft at 2 inches thick takes 2000 board feet of foam.</p>
+  </section>
+  <section>
+    <h2>The kits truth</h2>
+    <p>The job of 2000 board feet with kits of 600 board feet takes 4 kits, leaving 400 board feet in the last one.</p>
+  </section>
+  <section>
+    <h2>The coverage and cost truths</h2>
+    <p>The kit of 600 board feet at 2 inches thick covers 300 sq ft, and the 4 kits at $650 each cost $2600.00, or $1.30 a board foot.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Foam Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</body>
+</html>
